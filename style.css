@@ -1,0 +1,574 @@
+/* ========================== 
+GOOGLE FONT 
+========================== */ 
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap'); 
+/* ========================== 
+RESET 
+========================== */ 
+*{ 
+margin:0; 
+padding:0; 
+box-sizing:border-box; 
+scroll-behavior:smooth; 
+} 
+body{ 
+font-family:'Poppins',sans-serif; 
+background:#faf8f5; 
+color:#222; 
+} 
+img{ 
+width:100%; 
+display:block; 
+} 
+a{ 
+text-decoration:none; 
+} 
+/* ========================== 
+NAVBAR 
+========================== */ 
+header{ 
+position:fixed; 
+width:100%; 
+top:0; 
+left:0; 
+z-index:1000; 
+background:rgba(0,0,0,.55); 
+backdrop-filter:blur(10px); 
+} 
+.navbar{ 
+width:90%; 
+margin:auto; 
+height:80px; 
+display:flex; 
+justify-content:space-between; 
+align-items:center; 
+} 
+.logo{ 
+color:#d4af37; 
+font-family:'Playfair Display',serif; 
+font-size:30px; 
+} 
+.nav-links{ 
+display:flex; 
+list-style:none; 
+gap:30px; 
+} 
+.nav-links a{ 
+color:white; 
+transition:.3s; 
+} 
+.nav-links a:hover{ 
+color:#d4af37; 
+} 
+.btn{ 
+background:#d4af37; 
+color:white; 
+padding:12px 25px; 
+border-radius:30px; 
+transition:.3s; 
+} 
+.btn:hover{ 
+background:#b58f20; 
+} 
+/* ========================== 
+HERO 
+========================== */ 
+.hero{ 
+height:100vh; 
+background: 
+linear-gradient(rgba(0,0,0,.55), 
+rgba(0,0,0,.55)), 
+url("images/team.jpg"); 
+background-size:cover; 
+background-position:center; 
+display:flex; 
+justify-content:center; 
+align-items:center; 
+text-align:center; 
+} 
+.hero-content{ 
+max-width:700px; 
+color:white; 
+} 
+.hero h1{ 
+font-size:65px; 
+font-family:'Playfair Display',serif; 
+margin-bottom:20px; 
+} 
+.hero p{ 
+font-size:20px; 
+line-height:1.8; 
+margin-bottom:35px; 
+} 
+.hero-btn{ 
+display:inline-block; 
+background:#d4af37; 
+color:white; 
+padding:16px 35px; 
+border-radius:50px; 
+transition:.4s; 
+} 
+.hero-btn:hover{ 
+transform:translateY(-5px); 
+background:#b58f20; 
+} 
+/* ========================== 
+ABOUT 
+========================== */ 
+.about{ 
+width:90%; 
+margin:100px auto; 
+display:grid; 
+grid-template-columns:1fr 1fr; 
+gap:60px; 
+align-items:center; 
+} 
+.about-img img{ 
+border-radius:20px; 
+box-shadow:0 10px 30px rgba(0,0,0,.15); 
+} 
+.about h2{ 
+font-size:45px; 
+margin-bottom:20px; 
+font-family:'Playfair Display',serif; 
+} 
+.about p{ 
+color:#555; 
+line-height:1.8; 
+} 
+.about-box{ 
+margin-top:40px; 
+display:flex; 
+gap:40px; 
+} 
+.about-box h3{ 
+color:#d4af37; 
+font-size:32px; 
+} 
+.about-box p{ 
+margin-top:8px; 
+}
+/* ========================== 
+SECTION TITLE 
+========================== */ 
+.section-title{ 
+text-align:center; 
+font-size:42px; 
+font-family:'Playfair Display',serif; 
+margin-bottom:60px; 
+color:#222; 
+} 
+/* ========================== 
+SERVICES 
+========================== */ 
+.services{ 
+width:90%; 
+margin:100px auto; 
+} 
+.service-container{ 
+display:grid; 
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); 
+gap:30px; 
+} 
+.card{ 
+background:#fff; 
+border-radius:20px; 
+padding:40px 30px; 
+text-align:center; 
+transition:.4s; 
+box-shadow:0 10px 25px rgba(0,0,0,.08); 
+cursor:pointer; 
+} 
+.card i{ 
+font-size:45px; 
+color:#d4af37; 
+margin-bottom:20px; 
+} 
+.card h3{ 
+font-size:25px; 
+margin-bottom:15px; 
+font-family:'Playfair Display',serif; 
+} 
+.card p{ 
+color:#666; 
+line-height:1.8; 
+} 
+.card:hover{ 
+transform:translateY(-12px); 
+box-shadow:0 20px 40px rgba(0,0,0,.18); 
+} 
+/* ========================== 
+GALLERY 
+========================== */ 
+.gallery{ 
+width:90%; 
+margin:100px auto; 
+} 
+.gallery-grid{ 
+display:grid; 
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); 
+gap:20px; 
+} 
+.gallery-grid img{ 
+width:100%; 
+height:320px; 
+object-fit:cover; 
+border-radius:20px; 
+transition:.4s; 
+cursor:pointer; 
+box-shadow:0 10px 25px rgba(0,0,0,.08); 
+} 
+.gallery-grid img:hover{ 
+transform:scale(1.05); 
+box-shadow:0 20px 40px rgba(0,0,0,.18); 
+}
+/* ========================== 
+TESTIMONIALS 
+========================== */ 
+.slider{ 
+    width: 100%; 
+    overflow: hidden; 
+    max-width: 800px; 
+    margin: auto; 
+} 
+ 
+.slides{ 
+    display: flex; 
+    width: 300%; 
+    animation: slide 18s infinite; 
+} 
+ 
+.review{ 
+    width: 100%; 
+
+    flex:0 0 100%; 
+    padding: 40px; 
+    background: #fff; 
+    border-radius: 15px; 
+    text-align: center; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1); 
+} 
+ 
+@keyframes slide{ 
+    0%,25%{transform:translateX(0);} 
+    33%,58%{transform:translateX(-100%);} 
+    66%,91%{transform:translateX(-200%);} 
+    100%{transform:translateX(0);} 
+}
+/* ========================== 
+CONTACT 
+========================== */ 
+.contact{ 
+width:90%; 
+margin:100px auto; 
+} 
+.contact-box{ 
+display:grid; 
+grid-template-columns:1fr 1fr; 
+gap:40px; 
+align-items:center; 
+} 
+.contact-box div:first-child{ 
+background:#fff; 
+padding:40px; 
+border-radius:20px; 
+box-shadow:0 10px 25px rgba(0,0,0,.08); 
+} 
+.contact-box p{ 
+font-size:18px; 
+margin-bottom:20px; 
+color:#555; 
+} 
+.contact-box i{ 
+color:#d4af37; 
+margin-right:10px; 
+} 
+.contact iframe{ 
+width:100%; 
+height:350px; 
+border:none; 
+border-radius:20px; 
+box-shadow:0 10px 25px rgba(0,0,0,.08); 
+} 
+/* ========================== 
+FOOTER 
+========================== */ 
+footer{ 
+background:#111; 
+color:#fff; 
+text-align:center; 
+padding:50px 20px; 
+margin-top:80px; 
+} 
+footer h2{ 
+font-family:'Playfair Display',serif; 
+color:#d4af37; 
+margin-bottom:15px; 
+} 
+footer p{ 
+color:#ccc; 
+margin:8px 0; 
+}
+/* ========================== 
+FLOATING WHATSAPP BUTTON 
+========================== */ 
+.whatsapp-float{ 
+position:fixed; 
+bottom:25px; 
+right:25px; 
+width:60px; 
+height:60px; 
+background:#25D366; 
+color:#fff; 
+border-radius:50%; 
+display:flex; 
+justify-content:center; 
+align-items:center; 
+font-size:30px; 
+box-shadow:0 10px 25px rgba(0,0,0,.25); 
+transition:.3s; 
+z-index:999; 
+} 
+.whatsapp:hover{ 
+transform:scale(1.12); 
+} 
+/* FLOATING INSTAGRAM BUTTON */
+.instagram-float{ 
+position:fixed; 
+bottom:95px; 
+right:25px; 
+width:60px; 
+height:60px; 
+background:#E1306C; 
+color:#fff; 
+border-radius:50%; 
+display:flex; 
+justify-content:center; 
+align-items:center; 
+font-size:30px; 
+box-shadow:0 10px 25px rgba(0,0,0,.25); 
+transition:.3s; 
+z-index:999; 
+} 
+.instagram-float:hover{ 
+transform:scale(1.12); 
+} 
+/* ========================== 
+SIMPLE FADE ANIMATION 
+========================== */ 
+.hero-content, 
+.about, 
+.services, 
+.gallery, 
+.testimonial, 
+.contact{ 
+animation:fadeUp .9s ease; 
+} 
+@keyframes fadeUp{ 
+from{ 
+opacity:0; 
+transform:translateY(40px); 
+} 
+to{ 
+opacity:1; 
+transform:translateY(0); 
+} 
+} 
+/* ========================== 
+RESPONSIVE DESIGN 
+========================== */ 
+@media(max-width:992px){ 
+.navbar{ 
+flex-direction:column; 
+height:auto; 
+padding:20px 0; 
+} 
+.nav-links{ 
+margin:20px 0; 
+flex-wrap:wrap; 
+justify-content:center; 
+gap:18px; 
+} 
+.hero h1{ 
+font-size:48px; 
+} 
+.hero p{ 
+font-size:18px; 
+} 
+.about{ 
+grid-template-columns:1fr; 
+} 
+.contact-box{ 
+grid-template-columns:1fr; 
+} 
+} 
+@media(max-width:768px){ 
+.logo{ 
+font-size:24px; 
+} 
+.hero{ 
+padding:0 20px; 
+} 
+.hero h1{ 
+font-size:38px; 
+} 
+.hero p{ 
+font-size:16px; 
+} 
+.section-title{ 
+font-size:34px; 
+} 
+.about h2{ 
+font-size:34px; 
+} 
+.about-box{ 
+flex-direction:column; 
+gap:20px; 
+} 
+.gallery-grid{ 
+grid-template-columns:1fr; 
+} 
+.service-container{ 
+grid-template-columns:1fr; 
+} 
+} 
+@media(max-width:480px){ 
+.btn, 
+.hero-btn{ 
+padding:12px 24px; 
+font-size:15px; 
+} 
+.hero h1{ 
+font-size:30px; 
+} 
+.testimonial-box{ 
+padding:30px 20px; 
+} 
+.contact-box div:first-child{ 
+padding:25px; 
+} 
+.whatsapp{ 
+width:55px; 
+height:55px; 
+font-size:28px; 
+bottom:20px; 
+right:20px; 
+} 
+}
+/* Dark Mode Toggle */ 
+.theme-toggle { 
+position: fixed; 
+top: 20px; 
+right: 20px; 
+z-index: 1000; 
+} 
+#darkModeToggle { 
+width: 50px; 
+height: 50px; 
+border: none; 
+border-radius: 50%; 
+cursor: pointer; 
+font-size: 22px; 
+background: #2f2503; 
+color: white; 
+box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+transition: 0.3s; 
+} 
+#darkModeToggle:hover { 
+transform: scale(1.1); 
+} 
+/* Dark Mode */ 
+body.dark-mode { 
+background: #121212; 
+color: #ffffff; 
+} 
+body.dark-mode section, 
+body.dark-mode header, 
+body.dark-mode footer, 
+body.dark-mode nav { 
+background: #1e1e1e !important; 
+} 
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode p, 
+body.dark-mode a { 
+color: #ffffff !important; 
+}
+/* Dark mode for service cards */ 
+body.dark-mode .service-card, 
+body.dark-mode .card, 
+body.dark-mode .service-box { 
+background: #222 !important; 
+color: white !important; 
+border: 1px solid #444; 
+} 
+/* Dark mode for buttons */ 
+body.dark-mode .btn, 
+body.dark-mode .hero-btn { 
+background: #d4af37; 
+color: #111; 
+} 
+/* Dark mode for all sections */ 
+body.dark-mode section { 
+background: #121212 !important; 
+}
+/* Scroll Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ========================== 
+   CERTIFICATES 
+========================== */ 
+ 
+.certificates{ 
+    padding:80px 20px; 
+    background:#fff7fb; 
+    text-align:center; 
+} 
+ 
+.certificates h2{ 
+    font-size:2.3rem; 
+    color:#d63384; 
+    margin-bottom:10px; 
+} 
+ 
+.cert-subtitle{ 
+    color:#666; 
+    margin-bottom:40px; 
+} 
+ 
+.certificate-grid{ 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); 
+    gap:25px; 
+} 
+ 
+.certificate-card{ 
+    background:#fff; 
+    border-radius:18px; 
+    overflow:hidden; 
+    box-shadow:0 10px 25px rgba(0,0,0,.08); 
+    transition:.3s; 
+} 
+ 
+.certificate-card:hover{ 
+    transform:translateY(-8px); 
+} 
+ 
+.certificate-card img{ 
+    width:100%; 
+    height:350px; 
+    object-fit:contain; 
+    background:white; 
+} 
+ 
+.certificate-card h3{ 
+    padding:18px;
