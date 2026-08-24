@@ -579,3 +579,9 @@ background: #121212 !important;
                 background: red !important;
     }
 }
+@media (max-width: 768px) {
+    .hero {
+        outline: 10px solid red !
+        important;
+    }
+}
