@@ -593,3 +593,17 @@ top;
         line-height: 1.6;
     }
 }
+.hero {
+    height: 110vh
+    background:
+
+linear-gradient(rgba(0,0,0,.55)
+                rgba(0,0,0,.55)
+                url("images/team.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
