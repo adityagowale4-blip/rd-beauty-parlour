@@ -576,14 +576,6 @@ background: #121212 !important;
 
 @media (max-width: 768px){
     .hero {
-        height: auto;
-        min-height: 0;
-        aspect-ratio; 4 / 5;
-        
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
-top;
-        background-color: #111;
-}
+                background: red !important;
+    }
 }
