@@ -573,43 +573,14 @@ background: #121212 !important;
 .certificate-card h3{ 
     padding:18px;
     /* ===== MOBILE HERO FIX ===== */
-@media (max-width: 768px)
-    .hero {
-    min-height: 100vh;
-    background-size: cover;
-    background-size: center
-top;
-}
-    .hero-content {
-        width: 90%;
-        max-width: 500px;
-    }
-    .hero h1 {
-        font-size: 42px;
-        line-height: 1.15;
-    }
-    .hero p {
-        font-size: 18px;
-        line-height: 1.6;
-    }
-}
-.hero {
-    height: 110vh
-    background:
 
-linear-gradient(rgba(0,0,0,.55)
-                rgba(0,0,0,.55)
-                url("images/team.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 @media (max-width: 768px){
     .hero {
-    background-size: 100% auto;
+        height: auto;
+        min-height: 0;
+        aspect-ratio; 4 / 5;
+        
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center
 top;
